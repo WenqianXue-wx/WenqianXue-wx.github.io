@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Wenqian Xue — research in learning-based control, inverse reinforcement learning, adaptive dynamic programming, and multi-agent systems.">
+  <title>Wenqian Xue | Learning & Control</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Wenqian Xue, home"><span>WX</span> Wenqian Xue</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="about">
+      <div class="hero-copy">
+        <p class="eyebrow">Learning · Control · Autonomy</p>
+        <h1>Wenqian<br><em>Xue</em></h1>
+        <p class="lede">I develop learning-based control methods with rigorous stability guarantees for autonomous and networked systems.</p>
+        <p class="role">Postdoctoral Associate · Nonlinear Controls and Robotics Laboratory<br>University of Florida</p>
+        <div class="actions">
+          <a class="button primary" href="#publications">Explore publications <span>↘</span></a>
+          <a class="button" href="https://scholar.google.com/citations?user=U51ZS4YAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar <span>↗</span></a>
+        </div>
+      </div>
+      <div class="portrait-wrap">
+        <div class="portrait-frame"><img src="assets/wenqian-xue.png" alt="Portrait of Wenqian Xue"></div>
+        <div class="orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+        <p class="portrait-note">Gainesville, Florida<br><a href="mailto:w.xue@ufl.edu">w.xue@ufl.edu</a></p>
+      </div>
+    </section>
+
+    <section class="statement">
+      <p class="section-index">01 — About</p>
+      <div>
+        <h2>Control theory, shaped by data.</h2>
+        <p>My research lies at the intersection of automatic control, reinforcement learning, game theory, and deep learning. I am especially interested in inverse reinforcement learning and adaptive dynamic programming for systems that must learn reliably from limited observations.</p>
+        <p>I received my Ph.D. in Control Theory and Control Engineering in 2022 and my M.S.E. in Control Engineering in 2018 from Northeastern University, China. Before joining the NCR Laboratory in 2024, I was a Postdoctoral Associate at the University of Florida’s Computational NeuroEngineering Laboratory.</p>
+      </div>
+    </section>
+
+    <section class="research" id="research">
+      <div class="section-heading"><p class="section-index">02 — Research</p><h2>Research directions</h2></div>
+      <div class="research-grid">
+        <article><span>01</span><h3>Inverse Reinforcement Learning</h3><p>Recovering objectives and control policies from demonstrated behavior, including hidden-state, robust, and networked settings.</p></article>
+        <article><span>02</span><h3>Learning-Based Control</h3><p>Data-driven and model-free algorithms with stability, robustness, and convergence guarantees.</p></article>
+        <article><span>03</span><h3>Multi-Agent Systems</h3><p>Graphical games, distributed control, clustering, consensus, and strategic interaction across networked agents.</p></article>
+        <article><span>04</span><h3>Adaptive Intelligence</h3><p>Deep learning and adaptive dynamic programming for nonlinear systems, robotics, and safety-critical autonomy.</p></article>
+      </div>
+    </section>
+
+    <section class="publications" id="publications">
+      <div class="section-heading publication-heading">
+        <div><p class="section-index">03 — Publications</p><h2>Selected work</h2></div>
+        <a href="https://scholar.google.com/citations?user=U51ZS4YAAAAJ&hl=en" target="_blank" rel="noopener">Complete profile ↗</a>
+      </div>
+      <div class="filters" aria-label="Publication filters">
+        <button class="active" data-filter="all">All</button><button data-filter="2026">2026</button><button data-filter="2025">2025</button><button data-filter="2024">2024</button><button data-filter="earlier">Earlier</button>
+      </div>
+      <div id="publication-list" class="publication-list" aria-live="polite"></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <p class="section-index">04 — Contact</p>
+      <div><h2>Let’s discuss<br><em>learning & control.</em></h2><a href="mailto:w.xue@ufl.edu">w.xue@ufl.edu <span>↗</span></a></div>
+    </section>
+  </main>
+  <footer><p>© <span id="year"></span> Wenqian Xue</p><p>Built for clarity, discovery, and collaboration.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
