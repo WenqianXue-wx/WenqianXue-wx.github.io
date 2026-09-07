@@ -483,3 +483,42 @@ footer {
     margin: -24px 12px 0 42px;
   }
 }
+
+/* Compact News layout */
+.news-list article {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 11px 0;
+}
+
+.news-list time {
+  flex: 0 0 90px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.news-list p {
+  flex: 1;
+  margin: 0;
+  color: #334540;
+  line-height: 1.5;
+}
+
+.news-list a {
+  color: var(--accent);
+}
+
+.news-list a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 560px) {
+  .news-list article {
+    gap: 16px;
+  }
+
+  .news-list time {
+    flex-basis: 72px;
+  }
+}
