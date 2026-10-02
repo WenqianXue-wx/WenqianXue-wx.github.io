@@ -1,4 +1,5 @@
 const publications = [
+  {y:2026,t:"Reachability-Aware Safe Control Under Noisy Measurements Using Game-Theoretic Reinforcement Learning",a:"Wenqian Xue, Xuihui Shen, Max Gardenswartz, and Warren. E. Dixon",v:"IEEE Conference on Desicion and Control 2027",i:"saferl.png"},
   {type:"chapter",y:2026,t:"Inverse Reinforcement Learning of Differential Games",a:"Bosen Lian, Wenqian Xue, and Frank L. Lewis",v:"Encyclopedia of Systems and Control",i:"Encyclopedia.jpg",u:"https://doi.org/10.1016/B978-0-443-14081-5.00073-8"},
   {y:2026,t:"Inverse Reinforcement Learning for Disturbed Networked Nonlinear Systems With Data Dropouts",a:"Pengfei Shi, Wenqian Xue, Jialu Fan, Frank L. Lewis, and Bosen Lian",v:"IEEE Transactions on Neural Networks and Learning Systems",i:"draw.png",u:"https://ieeexplore.ieee.org/abstract/document/11232478"},
   {y:2026,t:"Initially Excited Asynchronous Reinforcement Learning Control With Monotonicity and Stability",a:"Jiacheng Wu, Wenqian Xue, Frank L. Lewis, and Bosen Lian",v:"IEEE Transactions on Systems, Man, and Cybernetics: Systems",i:"Initially.png",u:"https://ieeexplore.ieee.org/abstract/document/11333885"},
