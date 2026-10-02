@@ -580,9 +580,9 @@ footer {
 /* Research directions: compact list matching About and News */
 section.research {
   margin-top: 120px;
-  padding: 0 clamp(24px, 7vw, 110px) 48px;
-  background: var(--paper);
-  color: var(--ink);
+  padding: 40px clamp(24px, 7vw, 110px);
+  background: var(--ink);
+  color: var(--paper);
 }
 
 .research h2 {
