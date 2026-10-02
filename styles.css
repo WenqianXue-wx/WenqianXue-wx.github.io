@@ -654,3 +654,26 @@ section.teaching {
 .teaching-course p:last-child {
   margin-bottom: 0;
 }
+
+
+
+/* Publication categories */
+.publication-group + .publication-group {
+  margin-top: 48px;
+}
+
+.publication-group-title {
+  font-family: var(--sans);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0 0 20px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+/* Display the full book cover */
+.pub-book .pub-image {
+  height: auto;
+  object-fit: contain;
+}
