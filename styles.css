@@ -143,6 +143,9 @@ h2 em {
 .button:hover {
   transform: translateY(-2px);
 }
+
+
+
 .portrait-wrap {
   position: relative;
   justify-self: center;
@@ -231,6 +234,9 @@ h2 em {
   font-size: 19px;
   color: #334540;
 }
+
+
+
 .research,
 .publications {
   padding: 110px clamp(24px, 7vw, 110px);
@@ -275,6 +281,9 @@ h2 em {
   color: #aebdb8;
   max-width: 520px;
 }
+
+
+
 .publications {
   background: #fff;
   color: var(--ink);
@@ -608,7 +617,7 @@ section.research {
 /* Teaching section */
 section.teaching {
   padding: 64px clamp(24px, 7vw, 110px);
-  background: #fff
+  background: #fff;
   color: var(--ink);
 }
 
