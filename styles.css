@@ -524,5 +524,10 @@ footer {
 }
 
 
-
+/* Align About and News */
+.about-page .hero,
+.about-page .news {
+  padding-left: clamp(24px, 7vw, 110px);
+  padding-right: clamp(24px, 7vw, 110px);
+}
 
