@@ -683,6 +683,8 @@ section.teaching {
 
 /* Display the full book cover */
 .pub-book .pub-image {
+  width: 110px;
+  max-width: 100%;
   height: auto;
   object-fit: contain;
 }
