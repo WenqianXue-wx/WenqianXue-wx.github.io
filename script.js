@@ -52,7 +52,7 @@ function render(filter = 'all') {
       <section class="publication-group">
         <h3 class="publication-group-title">${group.title}</h3>
         ${entries.map(p => `
-          <article class="pub ${group.type === 'book' ? 'pub-book' : ''}">
+          <article class="pub ${group.type === 'book' || group.type === 'chapter' ? 'pub-book' : ''}">
             <div class="pub-year">${p.y}</div>
 
             <img class="pub-image"
