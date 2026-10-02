@@ -109,7 +109,7 @@ h2 em {
 }
 .lede,
 .role {
-  font-size: clamp(18px, 1.5vw, 22px);
+  font-size: clamp(15px, 1.3vw, 19px);
   max-width: 720px;
   line-height: 1.5;
 }
