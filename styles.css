@@ -575,3 +575,30 @@ footer {
     width: min(60vw, 220px);
   }
 }
+
+
+/* Research directions: compact list matching About and News */
+section.research {
+  margin-top: 64px;
+  padding: 0 clamp(24px, 7vw, 110px) 48px;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.research h2 {
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  margin: 0 0 20px;
+}
+
+.research-list {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.research-list li {
+  padding-left: 4px;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
