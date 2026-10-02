@@ -688,3 +688,12 @@ section.teaching {
   height: auto;
   object-fit: contain;
 }
+
+
+.publications .publication-heading h2 {
+  font-family: var(--sans);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
