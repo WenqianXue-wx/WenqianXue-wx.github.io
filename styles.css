@@ -531,3 +531,47 @@ footer {
   padding-right: clamp(24px, 7vw, 110px);
 }
 
+
+/* Compact academic homepage */
+.hero {
+  min-height: auto;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: clamp(32px, 5vw, 72px);
+}
+
+.hero h1 {
+  font-size: clamp(36px, 3.5vw, 48px);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+
+.hero .lede {
+  margin-top: 22px;
+}
+
+.hero .portrait-frame {
+  width: 240px;
+}
+
+.hero .portrait-note {
+  right: -12px;
+  padding: 10px 12px;
+  font-size: 12px;
+}
+
+@media (max-width: 850px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  .hero .portrait-wrap {
+    margin-top: 0;
+  }
+
+  .hero .portrait-frame {
+    width: min(60vw, 220px);
+  }
+}
