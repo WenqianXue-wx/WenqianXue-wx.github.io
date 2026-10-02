@@ -26,10 +26,58 @@ const publications = [
 
 const list=document.querySelector('#publication-list');
 function emphasize(name){return name.replaceAll('Wenqian Xue','<strong>Wenqian Xue</strong>')}
-function render(filter='all'){
-  const rows=publications.filter(p=>filter==='all'||String(p.y)===filter||(filter==='earlier'&&p.y<2024));
-  list.innerHTML=rows.map(p=>`<article class="pub"><div class="pub-year">${p.y}</div><img class="pub-image" loading="lazy" src="assets/${p.i}" alt="Research figure for ${p.t}"><div><h3>${p.t}</h3><p class="pub-authors">${emphasize(p.a)}</p><p class="pub-venue">${p.v}</p></div><a class="paper-link" href="${p.u}" target="_blank" rel="noopener" aria-label="Open ${p.t}">↗</a></article>`).join('');
+function render(filter = 'all') {
+  const rows = publications
+    .filter(p =>
+      filter === 'all' ||
+      String(p.y) === filter ||
+      (filter === 'earlier' && p.y < 2024)
+    )
+    .sort((a, b) => b.y - a.y);
+
+  const groups = [
+    { type: 'book', title: 'Books' },
+    { type: 'chapter', title: 'Book Chapters' },
+    { type: 'paper', title: 'Journal and Conference Papers' }
+  ];
+
+  list.innerHTML = groups.map(group => {
+    const entries = rows.filter(p =>
+      (p.type || 'paper') === group.type
+    );
+
+    if (!entries.length) return '';
+
+    return `
+      <section class="publication-group">
+        <h3 class="publication-group-title">${group.title}</h3>
+        ${entries.map(p => `
+          <article class="pub ${group.type === 'book' ? 'pub-book' : ''}">
+            <div class="pub-year">${p.y}</div>
+
+            <img class="pub-image"
+                 loading="lazy"
+                 src="assets/${p.i}"
+                 alt="${group.type === 'book' ? 'Book cover' : 'Research figure'} for ${p.t}">
+
+            <div>
+              <h3>${p.t}</h3>
+              <p class="pub-authors">${emphasize(p.a)}</p>
+              <p class="pub-venue">${p.v}</p>
+            </div>
+
+            <a class="paper-link"
+               href="${p.u}"
+               target="_blank"
+               rel="noopener"
+               aria-label="Open ${p.t}">↗</a>
+          </article>
+        `).join('')}
+      </section>
+    `;
+  }).join('');
 }
+
 document.querySelectorAll('.filters button').forEach(b=>b.addEventListener('click',()=>{document.querySelector('.filters .active').classList.remove('active');b.classList.add('active');render(b.dataset.filter)}));
 const toggle=document.querySelector('.nav-toggle'),nav=document.querySelector('#nav');toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',open)});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
 document.querySelector('#year').textContent=new Date().getFullYear();render();
